@@ -33,11 +33,8 @@ This repository contains a Discord bot that uses Selenium WebDriver for web scra
 
 ## Images
 
-
-> ![Screenshot_20230724_184733](https://github.com/Magg27/phind.com-Scraper/assets/84076753/16050b8a-e8b0-4e6c-851f-d0a4a164ff87)
-> ![Screenshot_20230724_185238](https://github.com/Magg27/phind.com-Scraper/assets/84076753/2e61ceb6-905c-43e2-bd72-fd7284adac83)
-
-
+![Screenshot_20230724_200906](https://github.com/Magg27/Phindbot/assets/84076753/061459a0-9f70-4de0-84c1-7c54b1da4094)
+![Screenshot_20230724_201018](https://github.com/Magg27/Phindbot/assets/84076753/1a72aa8c-ea71-42f6-89ae-37fa3794fde4)
 
 ## Note
 
