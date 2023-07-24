@@ -15,8 +15,6 @@ This repository contains a Discord bot that uses Selenium WebDriver for web scra
 - Undetected Chromedriver
 - Discord.py
 - Colorama
-- re
-- subprocess
 
 ## Setup
 
