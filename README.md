@@ -19,10 +19,9 @@ This repository contains a Discord bot that uses Selenium WebDriver for web scra
 ## Setup
 
 1. Clone this repository.
-2. Install the required dependencies.
-3. Replace the placeholder in `bot.run('')` with your Discord bot token.
-4. Replace the placeholder in `/PATH/TO/CHROMIUM/` & `/PATH/TO/CHROMIUMDRIVER/` with your correct file locations.
-5. Run the script.
+2. Install the required dependencies
+3. Put your discord token and the path to your chromium installation in the '.env' file 
+4. Run the script.
 
 ## Usage
 
