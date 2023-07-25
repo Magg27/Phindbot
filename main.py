@@ -1,10 +1,7 @@
-import subprocess
-import re
-
-import colorama
-from colorama import Fore, init
-init()
-
+import subprocess, colorama, re, discord
+from colorama import Fore
+from dotenv import load_dotenv
+from discord.ext import commands
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import undetected_chromedriver as uc
@@ -12,6 +9,8 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.service import Service
+
+colorama.init()
 
 options = webdriver.ChromeOptions()
 options.binary_location = '/PATH/TO/CHROMIUM/'
@@ -25,8 +24,7 @@ driver.execute_script("Object.defineProperty(navigator, 'webdriver', {get: () =>
 driver.get('https://www.phind.com')
 WebDriverWait(driver, 5).until(EC.element_to_be_clickable((By.ID, 'Basic Search'))).click()
 
-import discord
-from discord.ext import commands
+
 
 intents = discord.Intents.default()
 intents.message_content = True
@@ -100,4 +98,7 @@ async def on_message(message):
     #await bot.process_commands(message)
 
 
-bot.run('TOKEN')
+# Place discord token in a file named ".env", containing "DISCORD_TOKEN=[token]" 
+load_dotenv('.env')
+DISCORD_TOKEN = os.getenv('DISCORD_TOKEN')
+bot.run(DISCORD_TOKEN)

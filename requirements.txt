@@ -1,0 +1,5 @@
+pycord
+colorama
+dotenv
+selenium
+undetected-chromedriver
