@@ -1,4 +1,4 @@
-import subprocess, colorama, re, discord
+import subprocess, colorama, re, discord, os
 from colorama import Fore
 from dotenv import load_dotenv
 from discord.ext import commands
@@ -12,8 +12,10 @@ from selenium.webdriver.chrome.service import Service
 
 colorama.init()
 
+load_dotenv()
+
 options = webdriver.ChromeOptions()
-options.binary_location = '/PATH/TO/CHROMIUM/'
+options.binary_location = os.getenv('PATH_TO_CHROMIUM')
 options.add_argument("--no-sandbox")
 options.add_argument("--disable-popup-blocking")
 options.add_argument(f'user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36')
@@ -99,6 +101,6 @@ async def on_message(message):
 
 
 # Place discord token in a file named ".env", containing "DISCORD_TOKEN=[token]" 
-load_dotenv('.env')
+
 DISCORD_TOKEN = os.getenv('DISCORD_TOKEN')
 bot.run(DISCORD_TOKEN)
