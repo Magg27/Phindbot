@@ -20,18 +20,13 @@ This repository contains a Discord bot that uses Selenium WebDriver for web scra
 
 1. Clone this repository.
 2. Install the required dependencies
-3. Put your discord token and the path to your chromium installation in the '.env' file 
+3. Put your discord token and the path to your chromium installation in the `.env` file 
 4. Run the script.
 
 ## Usage
 
 - `!search <question>`: The bot will perform a task based on the question and reply with the gathered information.
 - `!clear`: The bot will clear the current thread removing all context from the conversation.
-
-## Images
-
-![Screenshot_20230724_200906](https://github.com/Magg27/Phindbot/assets/84076753/061459a0-9f70-4de0-84c1-7c54b1da4094)
-![Screenshot_20230724_201018](https://github.com/Magg27/Phindbot/assets/84076753/1a72aa8c-ea71-42f6-89ae-37fa3794fde4)
 
 ## Note
 
